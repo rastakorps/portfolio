@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+  h1, h2, h3, h4, h5, h6{
+    @apply font-bold;
+  }
+}
+
+@layer components{
+  .icon-container{
+    @apply p-4 w-max aspect-square bg-card-color rounded-full;
+  }
+  .link-portfolio{
+    @apply transition-transform duration-150 ease-linear hover:scale-110 text-tertiary-color hover:text-quaternary-color
+  }
+  .paragraph-custom{
+    @apply leading-normal text-quaternary-color text-center md:w-4/5 md:mx-auto md:text-left;
+  }
+
+  .icon{
+    @apply fill-quaternary-color w-10;
+  }
+}
+
+@layer utilities{
+  .clip-circle-0{
+    clip-path: circle(0%, at top right);
+  }
+
+  .clip-circle-full{
+    clip-path: circle(150%, at top right);
+  }
+}

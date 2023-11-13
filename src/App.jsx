@@ -1,14 +1,24 @@
-import { useState } from 'react'
 import './App.css'
+import Experience from './components/Experience'
+import Navbar from './components/Navbar'
+import Projects from './components/Projects'
+import TopPortfolio from './components/TopPortfolio'
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <h1 className="text-3xl font-bold underline text-center bg-blue-300">
-      Hello world!
-    </h1>
-  )
+    return (
+      <>
+        <header>
+          <Navbar/> 
+          <TopPortfolio />
+        </header>
+
+        <main>
+        <Experience /> 
+        <Projects />
+        </main>
+      </>
+    )
 }
 
 export default App
