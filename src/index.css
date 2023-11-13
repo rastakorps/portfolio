@@ -6,6 +6,9 @@
   h1, h2, h3, h4, h5, h6{
     @apply font-bold;
   }
+  input, textarea{
+    @apply bg-primary-color border-gray-color;
+  }
 }
 
 @layer components{
@@ -29,6 +32,9 @@
   }
   .tech-h3{
     @apply text-tertiary-color text-lg md:text-2xl;
+  }
+  .focus-input{
+    @apply outline-none focus:ring-1 focus:ring-quaternary-color focus:ring-inset transition;
   }
 }
 
