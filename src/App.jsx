@@ -2,6 +2,7 @@ import './App.css'
 import Experience from './components/Experience'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
+import Technologies from './components/Technologies'
 import TopPortfolio from './components/TopPortfolio'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <main>
         <Experience /> 
         <Projects />
+        <Technologies />
         </main>
       </>
     )

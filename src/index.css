@@ -18,9 +18,17 @@
   .paragraph-custom{
     @apply leading-normal text-quaternary-color text-center md:w-4/5 md:mx-auto md:text-left;
   }
-
   .icon{
     @apply fill-quaternary-color w-10;
+  }
+  .tech-icon{
+    @apply w-24 mx-auto md:mx-0 fill-quaternary-color;
+  }
+  .tech-article{
+    @apply transition-all duration-200 ease-out hover:scale-125;
+  }
+  .tech-h3{
+    @apply text-tertiary-color text-lg md:text-2xl;
   }
 }
 
